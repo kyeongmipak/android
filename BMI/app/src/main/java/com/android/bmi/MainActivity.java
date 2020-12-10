@@ -44,18 +44,17 @@ public class MainActivity extends Activity {
 
             public void onClick(View v) {
 
-
-                if (height.getText().toString().trim().length() == 0) {
-                    Toast.makeText(MainActivity.this, "키를 입력해주세요.", Toast.LENGTH_SHORT).show();
-
-                } else if (weight.getText().toString().trim().length() == 0) {
-                    Toast.makeText(MainActivity.this, "체중을 입력해주세요.", Toast.LENGTH_SHORT).show();
-
-                } else if (name.getText().toString().trim().length() == 0) {
+                if (name.getText().toString().trim().length() == 0) {
                     Toast.makeText(MainActivity.this, "이름을 입력해주세요.", Toast.LENGTH_SHORT).show();
 
                 } else if (age.getText().toString().trim().length() == 0) {
                     Toast.makeText(MainActivity.this, "나이를 입력해주세요.", Toast.LENGTH_SHORT).show();
+
+                } else if (height.getText().toString().trim().length() == 0) {
+                    Toast.makeText(MainActivity.this, "키를 입력해주세요.", Toast.LENGTH_SHORT).show();
+
+                } else if (weight.getText().toString().trim().length() == 0) {
+                    Toast.makeText(MainActivity.this, "체중을 입력해주세요.", Toast.LENGTH_SHORT).show();
 
                 } else {
 
