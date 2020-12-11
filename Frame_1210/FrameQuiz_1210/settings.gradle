@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "FrameQuiz_1210"
