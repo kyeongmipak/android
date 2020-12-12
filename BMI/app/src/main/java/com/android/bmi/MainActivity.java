@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-
+    // field 값
     int heightGet;
     int weightGet;
     double result;
