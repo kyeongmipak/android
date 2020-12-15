@@ -3,6 +3,8 @@ package com.android.idolsearch_1215;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Paint;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,7 +25,7 @@ public class MainActivity extends Activity {
 
     Button btnSearch, btnHome;
     LinearLayout layoutFirst, layoutSecond;
-    TextView name, birth, role, nation, nameTitle, birthTitle, roleTitle, nationTitle;
+    TextView name, birth, role, nation, nameTitle, birthTitle, roleTitle, nationTitle, homepage, cafe;
     VideoView first;
 
     private ArrayList<Idol> listData = null;
@@ -93,7 +95,32 @@ public class MainActivity extends Activity {
 
         first.start();
 
+        homepage = findViewById(R.id.homepage);
+        homepage.setPaintFlags(homepage.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+        homepage.setOnClickListener(mClickListener2);
+        cafe = findViewById(R.id.cafe);
+        cafe.setPaintFlags(cafe.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+        cafe.setOnClickListener(mClickListener3);
+
     }
+
+    View.OnClickListener mClickListener2 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Uri site = Uri.parse("http://www.seventeen-17.com");
+            Intent it  = new Intent(Intent.ACTION_VIEW,site);
+            startActivity(it);
+        }
+    };
+
+    View.OnClickListener mClickListener3 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Uri site = Uri.parse("http://cafe.daum.net/pledis-17");
+            Intent it  = new Intent(Intent.ACTION_VIEW,site);
+            startActivity(it);
+        }
+    };
 
     View.OnClickListener mClickListener = new View.OnClickListener() {
         @Override

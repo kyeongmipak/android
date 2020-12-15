@@ -37,7 +37,7 @@
                 android:layout_height="240dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="60dp"
 
                 />
 <!--            <ImageView-->
@@ -54,24 +54,38 @@
                  android:id="@+id/btnMemberSearch"
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
-                 android:text="MEMBER"
+                 android:text="Seventeen MEMBER"
                  android:gravity="center_vertical"
                  android:layout_gravity="center"
-                 android:layout_marginBottom="20dp"
+                 android:layout_marginBottom="130dp"
                  android:backgroundTint="#92A8D1"
                  android:textColor="@color/white"
                  />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="@string/homepage"
-                android:autoLink="web"
-                android:gravity="center"
-                android:layout_marginBottom="50px"
-                />
-
+                        <TextView
+                            android:id="@+id/homepage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#2196F3"
+                            android:text="공식 홈페이지"
+                            android:autoLink="web"
+                            android:gravity="center"
+                            android:layout_marginBottom="50px"
+                            android:layout_gravity="bottom|center"
+                            />
+                        <TextView
+                            android:id="@+id/cafe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#2196F3"
+                            android:text="Fan Club"
+                            android:autoLink="web"
+                            android:gravity="center"
+                            android:layout_marginBottom="50px"
+                            android:layout_gravity="bottom|center"
+                            />
         </LinearLayout>
 
         <LinearLayout
@@ -86,7 +100,8 @@
                 android:id="@+id/lv_idolMember"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
-                android:layout_weight="5"
+                android:layout_weight="6"
+                android:layout_marginBottom="30px"
                 />
 
 
@@ -198,7 +213,8 @@
                 android:text="처음으로"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
                 android:backgroundTint="#F7CAC9"
                 android:textColor="@color/white"
                 />
